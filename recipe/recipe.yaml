@@ -1,6 +1,6 @@
 context:
   name: fnm
-  version: "1.38.1"
+  version: "1.39.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/Schniz/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: c24e4c26183a4d88a33e343902ed2d45da23e78c66b2a696a7420eb86deddda9
+  sha256: 224081a677a02acd9f972885e824a98fa3843f5b778b28400ad5af97752f6127
 
 build:
   script:
@@ -25,7 +25,7 @@ requirements:
 
 tests:
   - script:
-    - fnm --version
+      - fnm --version
 
 about:
   homepage: https://fnm.vercel.app/
